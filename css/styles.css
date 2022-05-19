@@ -1,0 +1,320 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: black;
+    background-color: pink;
+    background-image: url(../img/information.png); background-size: cover; background-repeat: repeat;
+}
+
+#mainheader { /*#mainheader anropar id */
+    background-color: #bae1ff;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(../img/dark.png); background-size: cover; background-repeat: repeat;
+}
+
+#mainmenu {
+  margin-left: auto;
+  margin-right: auto;
+  width: 40em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.buttom1 {
+  font-size: 13px;
+  text-decoration: none;
+  background-color: black;
+  color: white;
+  padding: 6px;
+  border: none;
+  border-radius: 2px;
+}
+
+.menu  { /*. namn på ul-tag i mainmanu.php*/
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+.menu li { /*. namn på items i listang*/
+    float: left;
+ }
+
+ .menu li a { /* a-tagen stylas i listan*/
+    display: block;
+    color: rgb(174, 78, 155);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  /*.menu li a:hover:not(.active) { /* a-tagen lyses upp när man för muspekaren över den
+    background-color: rgb(0, 0, 0);
+  }*/
+  
+  .button2 {
+    font-size: 15px;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 6px;
+    border: none;
+    border-radius: 5px;
+  }
+
+  /* lista till statistics.php */
+  .tableFixHead {
+    overflow-y: auto;
+    height: 106px;
+  }
+  .tableFixHead thead th {
+    position: sticky;
+    top: 0;
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  th,
+  td {
+    padding: 8px 16px;
+    border: 1px solid #ccc;
+  }
+  th {
+    background: #eee;
+  }
+
+  #container2{
+    margin: 0px auto;
+    padding: 5px;
+    background-image: url(../img/white1.png); background-size: cover; background-repeat: repeat;
+  }
+  
+  .div1{
+    font-family: arial;
+    height: 100%;
+    padding-top: 12%;
+    padding-bottom: 80%;
+    padding-left: 5%;
+    font-size: large;
+    width: 20%; 
+    float: left;
+  }
+
+  #chartDiv{
+    font-family:arial;
+    height: 100%;
+    padding: 0px;
+    padding-top: 5%;
+    padding-bottom: 80%;
+    width: 70%;
+    float: right;
+    position: relative;
+    float: right;
+  /*margin-left: 50%;*/
+  }
+/*
+  .user-select-none svg-container{
+    margin-left: 70%;
+    opacity: 0;
+  }
+
+  .main-svg{
+    background-color: pink;
+   
+  }
+  
+  .legendtoggle{
+    background-color: pink;
+   
+  }
+  a {
+    color: black;
+  }*/
+
+  #ul1{
+    border:1px solid #000;
+    list-style:none;
+    max-height:100%;
+    width: 100%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    
+    background-image: url(../img/white1.png); background-size: cover; background-repeat: repeat;
+  }
+
+  #li1{
+    line-height:180%;
+    border: 10% solid black;
+  }
+  
+  #li1:nth-child(even){
+    background:rgb(218, 218, 218);
+  }  
+
+
+#startSida {  
+    position: absolute;
+    text-align: center;
+    top: 35%;
+    bottom: 20%;
+    right: 20%;
+    left: 20%;
+    background-color: white;
+    color: black;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-image: url(../img/white1.png); background-size: cover; background-repeat: repeat;
+}
+/*GLÖM EJ*/
+#info {  
+  position: absolute;
+  text-align: center;
+  top: 35%;
+  bottom: 20%;
+  right: 20%;
+  left: 20%;
+  background-color: rgb(0, 0, 0);
+  color: black;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-image: url(../img/white1.png); background-size: cover; background-repeat: repeat;
+}
+
+#forumSida {  
+  text-align: center;
+  top: 30%;
+  bottom: 40%;
+  right: 15%;
+  left: 15%;
+  background-color: rgb(0, 0, 0);
+  color: black;
+  padding-left: 20%;
+  padding-right: 20%;
+  background-image: url(../img/white1.png); background-size: cover; background-repeat: repeat;
+}
+
+#supportSida {  
+  position: absolute;
+  text-align: center;
+  top: 40%;
+  bottom: 30%;
+  right: 30%;
+  left: 30%;
+  background-color: white;
+  color: black;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-image: url(../img/white1.png); background-size: cover; background-repeat: repeat;
+}
+
+#map{  
+  height: 610px;
+  width: 100%;
+}
+
+#container4{
+  margin: 0 auto;
+  width: 1000px;
+  height: auto;
+  margin-left: 200px;
+}
+
+
+#container1{
+  margin: 0 auto;
+  width: 260px;
+  height: auto;
+  margin-left: 40%;
+}
+
+.contact-form {
+  background-color: #ffffff;
+  margin-top: 1%;
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  padding-left: 5%;
+}
+
+.box {
+  margin: 0;
+  display: flex;
+  align-items: stretch;
+}
+
+textarea {
+  width: 400px;
+  height: 80px;
+  background-color: #fff;
+  resize: none;
+}
+
+button {
+  width: 100px;
+  height: 30px;
+  background-color: #282828;
+  border: none;
+  color: #fff;
+  font-family: arial;
+  font-weight: 400;
+  cursor: pointer;
+  margin-bottom: 60px;
+}
+
+.comment-box {
+  /*width: 100%;*/
+  padding: 20px;
+  margin-bottom: 4px;
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+.comment-box p {
+  font-family: arial;
+  font-size: 14px;
+  line-height: 16px;
+  color: #282828;
+  font-weight: 100;
+
+}
+
+.delete-form {
+  position: absolute;
+  top: 0px;
+  right: 7px;
+
+}
+
+.delete-form button {
+  height: 20px;
+  color: #282828;
+  background-color: #fff;
+  opacity: 0.7;
+
+}
+
+.delete-form button:hover {
+  opacity: 1;
+
+}
+
+.user-select-none svg-container{
+  width: 50%;
+
+}
+
+#container5 {
+  padding-left: 30%;
+
+}

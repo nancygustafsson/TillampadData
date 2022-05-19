@@ -1,0 +1,53 @@
+{
+  "query": [
+    {
+      "code": "Hogskola",
+      "selection": {
+        "filter": "vs:HskTotal",
+        "values": [
+          "000"
+        ]
+      }
+    },
+    {
+      "code": "OmrAmne",
+      "selection": {
+        "filter": "vs:AmneTot",
+        "values": [
+          "00"
+        ]
+      }
+    },
+    {
+      "code": "Kon",
+      "selection": {
+        "filter": "item",
+        "values": [
+          "1",
+          "2"
+        ]
+      }
+    },
+    {
+      "code": "Alder",
+      "selection": {
+        "filter": "agg:Ålder5år20-39",
+        "values": [
+          "20-24"
+        ]
+      }
+    },
+    {
+      "code": "Tid",
+      "selection": {
+        "filter": "item",
+        "values": [
+          "2008/09"
+        ]
+      }
+    }
+  ],
+  "response": {
+    "format": "json"
+  }
+}

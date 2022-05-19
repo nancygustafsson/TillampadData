@@ -1,0 +1,79 @@
+{
+    "query": [
+      {
+        "code": "Region",
+        "selection": {
+          "filter": "item",
+          "values": [
+            "SE"
+          ]
+        }
+      },
+      {
+        "code": "Sektor",
+        "selection": {
+          "filter": "item",
+          "values": [
+            "4-5"
+          ]
+        }
+      },
+      {
+        "code": "Yrke2012",
+        "selection": {
+          "filter": "item",
+          "values": [
+            "1211",
+            "1221",
+            "1230",
+            "1241",
+            "1251",
+            "1311",
+            "1331",
+            "1361",
+            "1371",
+            "1591",
+            "1611",
+            "1731"
+          ]
+        }
+      },
+      {
+        "code": "Kon",
+        "selection": {
+          "filter": "item",
+          "values": [
+            "1",
+            "2"
+          ]
+        }
+      },
+      {
+        "code": "ContentsCode",
+        "selection": {
+          "filter": "item",
+          "values": [
+            "000000BU"
+          ]
+        }
+      },
+      {
+        "code": "Tid",
+        "selection": {
+          "filter": "item",
+          "values": [
+            "2014",
+            "2015",
+            "2016",
+            "2017",
+            "2018",
+            "2019",
+            "2020"
+          ]
+        }
+      }
+    ],
+    "response": {
+      "format": "json"
+    }
+}
