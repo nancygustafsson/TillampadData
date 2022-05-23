@@ -3,22 +3,20 @@ include('biblo/httpful.phar');
 
     $url = "https://api.scb.se/OV0104/v1/doris/sv/ssd/START/UF/UF0205/RegLasarN";
 
-    // Sökkoden som skickas med POST-anropet hämtas från en fil istället för att skrivas direkt här som i postExempel_1.php
-    $postKod = file_get_contents( "postAnrop2.json" ); 
+    $postKod = file_get_contents( "postAnrop2.json" ); // läser in JSON filen
 
-    // Hämta data
-    $response = \Httpful\Request::post( $url )
-        ->body( $postKod )
+    $response = \Httpful\Request::post( $url ) //gör post-anropet , fråga till scb servern
+        ->body( $postKod ) //skickar med argument till scb 
         ->send();
 
-    $inData =  json_decode( $response ); // utf8_encode( $response );
+    $inData =  json_decode( $response ); // $response som är en sträng görs om till ett objekt så det blir en struktur
 
     $nrMenWom = array();
     $labels = array();
     
    //var_dump($response);
 
-    foreach ( $inData->data as $examCode )
+    foreach ( $inData->data as $examCode ) // Värden läggs in i arrayerna 
     {
             if (strcmp($examCode->key[2], "1") == 0) {
                 $nrMenWom[] = $examCode->values[0];
@@ -32,10 +30,10 @@ include('biblo/httpful.phar');
     $data = [ [
         "values" => $nrMenWom,
         "labels" => $labels,
-        "type" => "pie",
+        "type" => "pie", //pie-diagram tilldelas 
     ]];
 
     header("Content-Type: application/json; charset=UTF-8");
-    echo json_encode($data);
+    echo json_encode($data); //möjliggör att diagrammet visas
     
 ?>

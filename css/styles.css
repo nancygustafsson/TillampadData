@@ -10,7 +10,7 @@ body {
     background-image: url(../img/information.png); background-size: cover; background-repeat: repeat;
 }
 
-#mainheader { /*#mainheader anropar id */
+#mainheader { 
     background-color: #bae1ff;
     color: rgb(255, 255, 255);
     width: 100%;
@@ -37,28 +37,24 @@ body {
   border-radius: 2px;
 }
 
-.menu  { /*. namn på ul-tag i mainmanu.php*/
+.menu  { 
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
   }
 
-.menu li { /*. namn på items i listang*/
+.menu li {
     float: left;
  }
 
- .menu li a { /* a-tagen stylas i listan*/
+ .menu li a { 
     display: block;
     color: rgb(174, 78, 155);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
   }
-
-  /*.menu li a:hover:not(.active) { /* a-tagen lyses upp när man för muspekaren över den
-    background-color: rgb(0, 0, 0);
-  }*/
   
   .button2 {
     font-size: 15px;
@@ -70,7 +66,6 @@ body {
     border-radius: 5px;
   }
 
-  /* lista till statistics.php */
   .tableFixHead {
     overflow-y: auto;
     height: 106px;
@@ -119,26 +114,7 @@ body {
     float: right;
     position: relative;
     float: right;
-  /*margin-left: 50%;*/
   }
-/*
-  .user-select-none svg-container{
-    margin-left: 70%;
-    opacity: 0;
-  }
-
-  .main-svg{
-    background-color: pink;
-   
-  }
-  
-  .legendtoggle{
-    background-color: pink;
-   
-  }
-  a {
-    color: black;
-  }*/
 
   #ul1{
     border:1px solid #000;
@@ -176,7 +152,7 @@ body {
     padding-right: 20px;
     background-image: url(../img/white1.png); background-size: cover; background-repeat: repeat;
 }
-/*GLÖM EJ*/
+
 #info {  
   position: absolute;
   text-align: center;
@@ -225,9 +201,9 @@ body {
 
 #container4{
   margin: 0 auto;
-  width: 1000px;
+  width: 50%;
   height: auto;
-  margin-left: 200px;
+  margin-left: 25%;
 }
 
 
@@ -254,7 +230,7 @@ body {
 }
 
 textarea {
-  width: 400px;
+  width: 90%;
   height: 80px;
   background-color: #fff;
   resize: none;
@@ -273,11 +249,13 @@ button {
 }
 
 .comment-box {
-  /*width: 100%;*/
+  width: 90%;
   padding: 20px;
   margin-bottom: 4px;
   background-color: #fff;
   border-radius: 4px;
+  position: relative;
+
 }
 
 .comment-box p {
@@ -292,11 +270,12 @@ button {
 .delete-form {
   position: absolute;
   top: 0px;
-  right: 7px;
+  right: 10px;
 
 }
 
 .delete-form button {
+  width: 40px;
   height: 20px;
   color: #282828;
   background-color: #fff;
@@ -316,5 +295,7 @@ button {
 
 #container5 {
   padding-left: 30%;
-
+  margin: 0px auto;
+  padding: 5px;
+  background-image: url(../img/white1.png); background-size: cover; background-repeat: repeat;
 }

@@ -1,5 +1,5 @@
 <?php
-$page_title = "Startsida";
+$page_title = "Forumsida";
 include("includes/header.php");
 date_default_timezone_set('Europe/Stockholm');
 include 'dbh.inc.php';                          
@@ -13,7 +13,7 @@ include 'comments.inc.php';
 <h3> Här kan du skriva om dina åsikter och tankar:</h3>
 <h4> Tankarna kan vara om samhällets jämlikhet, privata upplevelser eller kring statistiken på vår hemsida</h4>
 
-<!-- Use the setMessages function and make the boxes where you can write in your name and the message -->
+<!-- Använder setMessages funktionen (som ligger i comments.inc.php)och gör textrutorna där du kan skriva in namn och meddelande -->
 
 <?php
 
@@ -33,6 +33,6 @@ getMessages($conn);
 ?>
 </div>
 </div>
-</body>
 
+</body>
 </html>

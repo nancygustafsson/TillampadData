@@ -1,3 +1,4 @@
+<!-- länkar till alla sidor-->
 <nav id="mainmenu">
     <ul class="menu">
         <p><a href="index.php" class="buttom1">Startsida</a>

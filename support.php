@@ -2,29 +2,23 @@
 $page_title = "Startsida";
 include("includes/header.php");
 ?>
-<!-- defer attribute säger åt browser att inte vänta på scrpitet utan fortsätter att processas HTML och skapar DOM -->
-<!-- async gör scrpit nonblocking m.m -->
-<!-- callback försöker ladda funktionen initMap som ligger i slutet av URL'n -->
+
 <div id="container2" >
-<h3> Karta över huvudkontor till organisationer eller grupper som arbetar för jämnställdhet </h3>
+    <h3> Karta över huvudkontor till organisationer eller grupper som arbetar för jämnställdhet </h3>
 </div>
 <div id="map"></div>
 
 <script> 
-    function initMap(){
-        //Map options
+    function initMap(){ //funktion som sätter startpsoition när man kommer till sidan 
         var options = {
             zoom:6,
             center:{lat: 59.31299,lng:18.10136}
         }
-        // New map
-        var map= new 
-        google.maps.Map(document.getElementById('map'), options);
 
+        var map = new google.maps.Map(document.getElementById('map'), options); //kartan skapas
 
-
-        //array of markers
-        var markers = [
+        
+        var markers = [ //arrayer på alla koordinater och dess hemsidor och namn
             {
                 coordinates: {lat: 57.79721,lng:12.05250},
                 content: '<a href="https://jamstalldhetsmyndigheten.se/swedish-gender-equality-agency/"> Jämnställdhetsmyndigheten</a>'
@@ -51,26 +45,24 @@ include("includes/header.php");
             }
         ];
 
-        //Loop through markers
-        for(var i = 0;i < markers.length;i++){ //så längre i är mindre än markers längd, öka med 1
-        //Add markers
-        addMarker(markers[i]);
+        //for-loop som går igenom markers
+        for(var i = 0;i < markers.length;i++){ //så länge i är mindre än markers längd, öka med 1
+        addMarker(markers[i]); //skickar in markers[i] i funktionen addMarker
         }
 
-        //Add Marker Functions
-        function addMarker(props){
-            var marker = new google.maps.Marker({
-                position:props.coordinates,
-                map:map
+
+        function addMarker(props){ //skapar markeringar på kartan
+            var marker = new google.maps.Marker({ //google maps marker-metoder används
+                position:props.coordinates, //coordinates tas ut med hjälp av props 
+                map:map //variabeln map 
         });
 
-        //check content
-            if(props.content){
+            if(props.content){ //skapar textrutor på markeringarna
                 var infoWindow = new google.maps.InfoWindow({
                 content:props.content
         })}
         
-            marker.addListener('click', function(){
+            marker.addListener('click', function(){ //vid klick på markering kommer textruta upp
             infoWindow.open(map, marker);
         });
         }
@@ -79,10 +71,12 @@ include("includes/header.php");
 
 </script>
 
+<!-- defer attribute säger åt browser att inte vänta på scrpitet utan fortsätter att processas HTML och skapar DOM -->
+<!--async gör scrpit nonblocking m.m -->
+
 <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDd2zWs2fLR2hDrUVQCwIAuVGmyjlv0erE&callback=initMap">
 </script>
 
-
-
-<!-- AIzaSyDd2zWs2fLR2hDrUVQCwIAuVGmyjlv0erE -->
+</body>
+</html>

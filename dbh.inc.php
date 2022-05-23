@@ -1,4 +1,4 @@
-<!-- Connecting to database-->
+<!-- Kopplar till databasen-->
 <?php
 
 $conn = mysqli_connect('localhost','root', '', 'TillampadData');
